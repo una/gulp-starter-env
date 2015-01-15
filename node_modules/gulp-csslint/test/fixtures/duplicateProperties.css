@@ -1,0 +1,12 @@
+/* properties with the same value */
+.mybox {
+  border: 1px solid black;
+  border: 1px solid black;
+}
+
+/* properties separated by another property */
+.mybox {
+  border: 1px solid black;
+  color: green;
+  border: 1px solid red;
+}
