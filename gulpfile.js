@@ -1,14 +1,15 @@
-var gulp      = require('gulp'),
-    sass      = require('gulp-sass'),
-    rename    = require('gulp-rename'),
-    cssmin    = require('gulp-minify-css'),
-    concat    = require('gulp-concat'),
-    uglify    = require('gulp-uglify'),
-    jshint    = require('gulp-jshint'),
-    scsslint  = require('gulp-scss-lint'),
-    cache     = require('gulp-cached');
-    prefix    = require('gulp-autoprefixer'),
-    size      = require('gulp-size');
+var gulp        = require('gulp'),
+    sass        = require('gulp-sass'),
+    rename      = require('gulp-rename'),
+    cssmin      = require('gulp-minify-css'),
+    concat      = require('gulp-concat'),
+    uglify      = require('gulp-uglify'),
+    jshint      = require('gulp-jshint'),
+    scsslint    = require('gulp-scss-lint'),
+    cache       = require('gulp-cached');
+    prefix      = require('gulp-autoprefixer'),
+    browserSync = require('browser-sync');
+    size        = require('gulp-size');
 
 gulp.task('scss', function() {
   return gulp.src('scss/main.scss')
@@ -23,6 +24,14 @@ gulp.task('scss', function() {
     .pipe(gulp.dest('dist/css'));
 });
 
+gulp.task('browser-sync', function() {
+    browserSync({
+        server: {
+            baseDir: "dist/"
+        }
+    });
+});
+
 gulp.task('js', function() {
   gulp.src('js/*.js')
     .pipe(uglify())
@@ -32,7 +41,7 @@ gulp.task('js', function() {
 });
 
 gulp.task('scss-lint', function() {
-  gulp.src('/scss/**/*.scss')
+  gulp.src('scss/**/*.scss')
     .pipe(cache('scsslint'))
     .pipe(scsslint());
 });
@@ -44,7 +53,7 @@ gulp.task('jshint', function() {
 });
 
 gulp.task('watch', function() {
-  gulp.watch('scss/**/*.scss', ['scss', 'scss-lint']);
+  gulp.watch('scss/**/*.scss', ['scss-lint', 'scss']);
   gulp.watch('js/*.js', ['jshint', 'js']);
 });
 

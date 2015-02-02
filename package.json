@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "dependencies": {},
   "devDependencies": {
+    "browser-sync": "^2.0.0-rc4",
     "gulp": "^3.8.10",
     "gulp-autoprefixer": "^2.1.0",
     "gulp-cached": "^1.0.2",
