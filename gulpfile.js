@@ -20,11 +20,11 @@ gulp.task('scss', function() {
     .pipe(prefix())
     .pipe(rename('main.css'))
     .pipe(gulp.dest('dist/css'))
+    .pipe(reload({stream:true}))
     .pipe(cssmin())
     .pipe(size({ gzip: true, showFiles: true }))
     .pipe(rename({ suffix: '.min' }))
-    .pipe(gulp.dest('dist/css'))
-    .pipe(reload({stream:true}));
+    .pipe(gulp.dest('dist/css'));
 });
 
 gulp.task('browser-sync', function() {
@@ -40,7 +40,8 @@ gulp.task('js', function() {
     .pipe(uglify())
     .pipe(size({ gzip: true, showFiles: true }))
     .pipe(concat('j.js'))
-    .pipe(gulp.dest('dist/js'));
+    .pipe(gulp.dest('dist/js'))
+    .pipe(reload({stream:true}));
 });
 
 gulp.task('scss-lint', function() {
