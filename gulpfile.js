@@ -5,7 +5,8 @@ var gulp    = require('gulp'),
     concat  = require('gulp-concat'),
     uglify  = require('gulp-uglify'),
     jshint  = require('gulp-jshint'),
-    csslint = require('gulp-csslint'),
+    scsslint = require('gulp-scss-lint'),
+    cache = require('gulp-cached');
     prefix  = require('gulp-autoprefixer'),
     size    = require('gulp-size');
 
@@ -22,23 +23,18 @@ gulp.task('scss', function() {
     .pipe(gulp.dest('dist/css'));
 });
 
-gulp.task('csslint', function() {
-  gulp.src('css/main.css')
-    .pipe(csslint({
-      'compatible-vendor-prefixes': false,
-      'box-sizing': false,
-      'important': false,
-      'known-properties': false
-    }))
-    .pipe(csslint.reporter());
-});
-
 gulp.task('js', function() {
   gulp.src('js/*.js')
     .pipe(uglify())
     .pipe(size({ gzip: true, showFiles: true }))
     .pipe(concat('j.js'))
     .pipe(gulp.dest('dist/js'));
+});
+
+gulp.task('scss-lint', function() {
+  gulp.src('/scss/**/*.scss')
+    .pipe(cache('scsslint'))
+    .pipe(scsslint());
 });
 
 gulp.task('jshint', function() {
@@ -48,8 +44,8 @@ gulp.task('jshint', function() {
 });
 
 gulp.task('watch', function() {
-  gulp.watch('scss/*.scss', ['scss', 'csslint']);
+  gulp.watch('scss/**/*.scss', ['scss', 'scss-lint']);
   gulp.watch('js/*.js', ['jshint', 'js']);
 });
 
-gulp.task('default', ['scss', 'csslint', 'js', 'jshint', 'watch']);
+gulp.task('default', ['scss', 'scss-lint', 'js', 'jshint', 'watch']);
