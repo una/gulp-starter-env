@@ -9,6 +9,7 @@ var gulp        = require('gulp'),
     cache       = require('gulp-cached'),
     prefix      = require('gulp-autoprefixer'),
     browserSync = require('browser-sync'),
+    reload      = browserSync.reload,
     minifyHTML  = require('gulp-minify-html'),
     size        = require('gulp-size');
 
@@ -22,7 +23,8 @@ gulp.task('scss', function() {
     .pipe(cssmin())
     .pipe(size({ gzip: true, showFiles: true }))
     .pipe(rename({ suffix: '.min' }))
-    .pipe(gulp.dest('dist/css'));
+    .pipe(gulp.dest('dist/css'))
+    .pipe(reload({stream:true}));
 });
 
 gulp.task('browser-sync', function() {
@@ -56,6 +58,7 @@ gulp.task('minify-html', function() {
   gulp.src('./*.html')
     .pipe(minifyHTML(opts))
     .pipe(gulp.dest('dist/'))
+    .pipe(reload({stream:true}));
 });
 
 gulp.task('jshint', function() {
@@ -67,6 +70,7 @@ gulp.task('jshint', function() {
 gulp.task('watch', function() {
   gulp.watch('scss/**/*.scss', ['scss-lint', 'scss']);
   gulp.watch('js/*.js', ['jshint', 'js']);
+  gulp.watch('./*.html', ['minify-html']);
 });
 
-gulp.task('default', ['watch']);
+gulp.task('default', ['browser-sync', 'watch']);
