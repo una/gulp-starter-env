@@ -74,4 +74,4 @@ gulp.task('watch', function() {
   gulp.watch('./*.html', ['minify-html']);
 });
 
-gulp.task('default', ['browser-sync', 'watch']);
+gulp.task('default', ['browser-sync', 'minify-html', 'scss', 'watch']);
