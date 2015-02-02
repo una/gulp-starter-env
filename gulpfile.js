@@ -6,9 +6,10 @@ var gulp        = require('gulp'),
     uglify      = require('gulp-uglify'),
     jshint      = require('gulp-jshint'),
     scsslint    = require('gulp-scss-lint'),
-    cache       = require('gulp-cached');
+    cache       = require('gulp-cached'),
     prefix      = require('gulp-autoprefixer'),
-    browserSync = require('browser-sync');
+    browserSync = require('browser-sync'),
+    minifyHTML  = require('gulp-minify-html'),
     size        = require('gulp-size');
 
 gulp.task('scss', function() {
@@ -44,6 +45,17 @@ gulp.task('scss-lint', function() {
   gulp.src('scss/**/*.scss')
     .pipe(cache('scsslint'))
     .pipe(scsslint());
+});
+
+gulp.task('minify-html', function() {
+    var opts = {
+      comments:true,
+      spare:true
+    };
+
+  gulp.src('./*.html')
+    .pipe(minifyHTML(opts))
+    .pipe(gulp.dest('dist/'))
 });
 
 gulp.task('jshint', function() {
