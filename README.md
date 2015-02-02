@@ -6,7 +6,8 @@ What's set up here:
 - Sass (LibSass)
 - Autoprefixer
 - Minification & Uglify
-- JsHint & CSSLint
+- JsHint
+- Scss Lint (based on [this](https://github.com/causes/scss-lint/blob/master/config/default.yml) config)
 
 To Get Started:
 
