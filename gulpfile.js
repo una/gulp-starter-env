@@ -69,7 +69,7 @@ gulp.task('jshint', function() {
 });
 
 gulp.task('watch', function() {
-  gulp.watch('scss/**/*.scss', ['scss-lint', 'scss']);
+  gulp.watch('scss/**/*.scss', ['scss']);
   gulp.watch('js/*.js', ['jshint', 'js']);
   gulp.watch('./*.html', ['minify-html']);
 });
