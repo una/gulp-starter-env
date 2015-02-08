@@ -10,6 +10,7 @@ What's set up here:
 - Scss Lint (based on [this](https://github.com/causes/scss-lint/blob/master/config/default.yml) config)
 - HTML Minification
 - BrowserSync
+- Image Minification
 
 ## To Get Started:
 

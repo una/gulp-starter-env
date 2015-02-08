@@ -11,7 +11,9 @@ var gulp        = require('gulp'),
     browserSync = require('browser-sync'),
     reload      = browserSync.reload,
     minifyHTML  = require('gulp-minify-html'),
-    size        = require('gulp-size');
+    size        = require('gulp-size'),
+    imagemin    = require('gulp-imagemin'),
+    pngquant    = require('imagemin-pngquant');
 
 gulp.task('scss', function() {
   return gulp.src('scss/main.scss')
@@ -74,4 +76,14 @@ gulp.task('watch', function() {
   gulp.watch('./*.html', ['minify-html']);
 });
 
-gulp.task('default', ['browser-sync', 'minify-html', 'scss', 'watch']);
+gulp.task('imgmin', function () {
+    return gulp.src('img/*')
+        .pipe(imagemin({
+            progressive: true,
+            svgoPlugins: [{removeViewBox: false}],
+            use: [pngquant()]
+        }))
+        .pipe(gulp.dest('dist/img'));
+});
+
+gulp.task('default', ['browser-sync', 'imgmin', 'minify-html', 'scss', 'watch']);
