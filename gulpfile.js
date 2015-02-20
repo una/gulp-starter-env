@@ -18,8 +18,6 @@ var gulp        = require('gulp'),
 		notify      = require('gulp-notify');
 
 
-
-
 gulp.task('scss', function() {
 	var onError = function(err) {
     notify.onError({
