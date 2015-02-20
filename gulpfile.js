@@ -14,22 +14,23 @@ var gulp        = require('gulp'),
     size        = require('gulp-size'),
     imagemin    = require('gulp-imagemin'),
     pngquant    = require('imagemin-pngquant'),
-		plumber     = require('gulp-plumber'),
-		notify      = require('gulp-notify');
+    plumber     = require('gulp-plumber'),
+    notify      = require('gulp-notify');
 
 
 gulp.task('scss', function() {
-	var onError = function(err) {
-    notify.onError({
-			title:    "Gulp",
-			subtitle: "Failure!",
-			message:  "Error: <%= error.message %>",
-			sound:    "Beep"
-		})(err);
-    this.emit('end');
+    var onError = function(err) {
+      notify.onError({
+          title:    "Gulp",
+          subtitle: "Failure!",
+          message:  "Error: <%= error.message %>",
+          sound:    "Beep"
+      })(err);
+      this.emit('end');
   };
+  
   return gulp.src('scss/main.scss')
-	  .pipe(plumber({errorHandler: onError}))
+    .pipe(plumber({errorHandler: onError}))
     .pipe(sass())
     .pipe(size({ gzip: true, showFiles: true }))
     .pipe(prefix())
