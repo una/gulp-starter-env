@@ -13,10 +13,24 @@ var gulp        = require('gulp'),
     minifyHTML  = require('gulp-minify-html'),
     size        = require('gulp-size'),
     imagemin    = require('gulp-imagemin'),
-    pngquant    = require('imagemin-pngquant');
+    pngquant    = require('imagemin-pngquant'),
+    plumber     = require('gulp-plumber'),
+    notify      = require('gulp-notify');
+
 
 gulp.task('scss', function() {
+    var onError = function(err) {
+      notify.onError({
+          title:    "Gulp",
+          subtitle: "Failure!",
+          message:  "Error: <%= error.message %>",
+          sound:    "Beep"
+      })(err);
+      this.emit('end');
+  };
+  
   return gulp.src('scss/main.scss')
+    .pipe(plumber({errorHandler: onError}))
     .pipe(sass())
     .pipe(size({ gzip: true, showFiles: true }))
     .pipe(prefix())
@@ -26,7 +40,7 @@ gulp.task('scss', function() {
     .pipe(cssmin())
     .pipe(size({ gzip: true, showFiles: true }))
     .pipe(rename({ suffix: '.min' }))
-    .pipe(gulp.dest('dist/css'));
+    .pipe(gulp.dest('dist/css'))
 });
 
 gulp.task('browser-sync', function() {
