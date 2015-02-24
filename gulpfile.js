@@ -15,6 +15,7 @@ var gulp        = require('gulp'),
     imagemin    = require('gulp-imagemin'),
     pngquant    = require('imagemin-pngquant'),
     plumber     = require('gulp-plumber'),
+    deploy      = require('gulp-gh-pages'),
     notify      = require('gulp-notify');
 
 
@@ -49,6 +50,11 @@ gulp.task('browser-sync', function() {
             baseDir: "dist/"
         }
     });
+});
+
+gulp.task('deploy', function () {
+    return gulp.src('dist/**/*')
+        .pipe(deploy());
 });
 
 gulp.task('js', function() {
