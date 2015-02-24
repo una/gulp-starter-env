@@ -33,4 +33,4 @@ If you're using a text editor like Sublime, I'd recommend installing `SublimeLin
 
 ## Deploying to gh-pages
 
-You can run `npm deploy` to push your site onto the gh-pages branch. Then, you can navigate to it via *http://<your-github-username>.github.io/<project-name>*
+You can run `npm deploy` to push your site onto the gh-pages branch. Then, you can navigate to it via *http://< your-github-username >.github.io/< project-name >*
