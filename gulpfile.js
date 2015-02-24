@@ -28,7 +28,7 @@ gulp.task('scss', function() {
       })(err);
       this.emit('end');
   };
-  
+
   return gulp.src('scss/main.scss')
     .pipe(plumber({errorHandler: onError}))
     .pipe(sass())
@@ -101,4 +101,4 @@ gulp.task('imgmin', function () {
         .pipe(gulp.dest('dist/img'));
 });
 
-gulp.task('default', ['browser-sync', 'imgmin', 'minify-html', 'scss', 'watch']);
+gulp.task('default', ['browser-sync', 'js', 'imgmin', 'minify-html', 'scss', 'watch']);
