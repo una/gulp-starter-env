@@ -44,6 +44,6 @@ You can run `npm deploy` to push your site onto the gh-pages branch. Then, you c
 - `sudo`: you get access as a 'super user' of your system (you can override permissions)
 - `npm`: node project manager -- the command line task manager that is installing everything inside of `package.json`
 - `package.json`: a file with information about your project. This is also where your list of dependencies lives which npm installs
-- `gulp`: a [task manager](http://gulp.com) that is running a bunch of scripts to make this environment work
+- `gulp`: a [task manager](http://gulpjs.com) that is running a bunch of scripts to make this environment work
 - `dist`: distribution folder -- don't edit anything in here. It is where your gulp task builds into
 - `scss`: a Sass syntax that imitates CSS
