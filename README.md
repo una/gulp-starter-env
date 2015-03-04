@@ -27,7 +27,7 @@ What's set up here:
 
 ## Linting
 
-This linter is the only `ruby` dependancy in this project. It is also optional!
+This linter is the only `ruby` dependency in this project. It is also optional!
 
 File Linting is where you read your file to make sure that your code conforms to standards. You should be doing this continuously.
 
@@ -47,4 +47,3 @@ You can run `npm deploy` to push your site onto the gh-pages branch. Then, you c
 - `gulp`: a [task manager](http://gulp.com) that is running a bunch of scripts to make this environment work
 - `dist`: distribution folder -- don't edit anything in here. It is where your gulp task builds into
 - `scss`: a Sass syntax that imitates CSS
-
