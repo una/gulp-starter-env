@@ -85,7 +85,7 @@ gulp.task('minify-html', function() {
 });
 
 gulp.task('jshint', function() {
-  gulp.src('dist/js/j.js')
+  gulp.src('js/*.js')
     .pipe(jshint())
     .pipe(jshint.reporter('default'));
 });
