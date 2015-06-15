@@ -15,7 +15,7 @@ What's set up here:
 
 ## To Get Started:
 
-1. Install node and make sure npm (Node Project Manager) is also [installed](http://blog.nodeknockout.com/post/65463770933/how-to-install-node-js-and-npm)
+1. Install node and make sure npm (Node Package Manager) is also [installed](http://blog.nodeknockout.com/post/65463770933/how-to-install-node-js-and-npm)
 2. Clone this repo with `git clone https://github.com/una/gulp-starter-env` (in terminal) or download the zip
 3. In terminal, `cd` (change directory) to the folder containing your project. (i.e. if I start at ~ and I have a Dev folder on my Desktop containing this project, I might type `cd Desktop/Dev/gulp-starter-env`). Alternatively, you can type `cd ` and drag the location of the folder into your terminal and hit enter.
 4. When inside the directory which contains this project in terminal, type `npm install`. If (and only if) you're having trouble with `npm install`, try `sudo npm install` -- this makes you act as a super user
