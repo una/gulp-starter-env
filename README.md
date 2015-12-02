@@ -7,7 +7,7 @@ What's set up here:
 - Autoprefixer
 - CSS Minification
 - JSHint
-- Sass Linting (based on [this](https://github.com/sasstools/sass-lint/blob/master/lib/config/sass-lint.yml) config)
+- Scss Lint (based on [this](https://github.com/causes/scss-lint/blob/master/config/default.yml) config)
 - HTML Minification
 - BrowserSync
 - Image Minification
@@ -25,13 +25,11 @@ What's set up here:
 8. Your minified files will be automagically created and updated in `dist/`. It will create your optimized css, html, and javascript files for you. Never edit files within the `dist/` folder. (Dist stands for Distribution)
 9. Keep gulp running while you're making changes. When you want to close out of the gulp task, in the terminal, hit `ctrl + C`
 
-## Linting Stylesheets
+## Linting
+
+This linter is the only `ruby` dependency in this project. It is also optional!
 
 File Linting is where you read your file to make sure that your code conforms to standards. You should be doing this continuously.
-
-This repo uses a (brand new) node-based Sass linter! In order to lint your Sass files, run `gulp sass-lint`.
-
-You can edit your configuration settings in the *sass-lint.yml* file.
 
 If you're using a text editor like Sublime, I'd recommend installing `SublimeLinter` and `SublimeLinter-contrib-scss-lint`. You can also lint with gulp inside of your terminal by running `gulp scss-lint`.
 
