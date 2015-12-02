@@ -20,6 +20,6 @@
     "gulp-sass-lint": "0.1.0-beta.2",
     "gulp-size": "^1.2.0",
     "gulp-uglify": "^1.0.2",
-    "imagemin-pngquant": "^4.0.0",
+    "imagemin-pngquant": "^4.0.0"
   }
 }
