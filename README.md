@@ -27,11 +27,11 @@ What's set up here:
 
 ## Linting
 
-This linter is the only `ruby` dependency in this project. It is also optional!
+This linter is the only `ruby` dependency in this project (and it's optional)
 
 File Linting is where you read your file to make sure that your code conforms to standards. You should be doing this continuously.
 
-If you're using a text editor like Sublime, I'd recommend installing `SublimeLinter` and `SublimeLinter-contrib-scss-lint`. You can also lint with gulp inside of your terminal by running `gulp scss-lint`.
+If you're using a text editor like Sublime, I'd recommend installing `SublimeLinter` and `SublimeLinter-contrib-scss-lint`. You can also lint with gulp inside of your terminal by running `gulp scss-lint`. Similar linters are available for other text editors.
 
 ## Deploying to gh-pages
 
