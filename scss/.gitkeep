@@ -1,0 +1,72 @@
+android/perryboard_runtime permissions Private
+ Updated 31 minutes ago
+  
+tag:github.com,2008:/P-DUBB <title>Private Feed for P-DUBB</title> 2020-06-25T07:14:35Z tag:github.com,2001:FollowEvent/12750101845 2020-06-25T07:14:35Z 2020-06-25T07:14:35Z <title type="html">SuriyaaKudoIsc started following JuliusKreutz</title> SuriyaaKudoIsc github@suriyaa.tk https://github.com/SuriyaaKudoIsc <div class="follow"><div class="body"> <!-- follow --> <div class="d-flex flex-items-baseline border-bottom border-gray py-3"> <span class="mr-3"><a class="d-inline-block" href="/SuriyaaKudoIsc" rel="noreferrer"><img class="avatar avatar-user" src="https://avatars3.githubusercontent.com/u/5073946?s=64&amp;v=4" width="32" height="32" alt="@SuriyaaKudoIsc"></a></span>
+&lt;div class=&quot;d-flex flex-column width-full&quot;&gt;
+    &lt;div class=&quot;d-flex flex-items-baseline&quot;&gt;
+      &lt;div&gt;
+        &lt;a class=&quot;link-gray-dark no-underline text-bold wb-break-all d-inline-block&quot; href=&quot;/SuriyaaKudoIsc&quot; rel=&quot;noreferrer&quot;&gt;SuriyaaKudoIsc&lt;/a&gt;
+        started following
+          &lt;a class=&quot;link-gray-dark text-bold&quot; href=&quot;/JuliusKreutz&quot; rel=&quot;noreferrer&quot;&gt;JuliusKreutz&lt;/a&gt;
+        &lt;span class=&quot;f6 text-gray-light no-wrap ml-1&quot;&gt;
+          &lt;relative-time datetime=&quot;2020-06-25T07:14:35Z&quot; class=&quot;no-wrap&quot;&gt;Jun 25, 2020&lt;/relative-time&gt;
+        &lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;Box p-3 mt-2&quot;&gt;
+      &lt;div class=&quot;d-flex&quot;&gt;
+          &lt;a title=&quot;JuliusKreutz&quot; href=&quot;/JuliusKreutz&quot; rel=&quot;noreferrer&quot;&gt;&lt;img class=&quot;avatar avatar-user mr-2&quot; alt=&quot;JuliusKreutz&quot; src=&quot;https://avatars0.githubusercontent.com/u/47820349?v=4&quot; width=&quot;40&quot; height=&quot;40&quot;&gt;&lt;/a&gt;
+        &lt;div class=&quot;width-full ml-1&quot;&gt;
+          &lt;span class=&quot;lh-condensed text-gray-dark&quot;&gt;
+
+            &lt;span class=&quot;mr-1&quot;&gt;
+                  &lt;a class=&quot;f4 text-bold link-gray-dark no-underline&quot; href=&quot;/JuliusKreutz&quot; rel=&quot;noreferrer&quot;&gt;JuliusKreutz&lt;/a&gt;
+            &lt;/span&gt;
+
+          &lt;/span&gt;
+
+              &lt;div class=&quot;dashboard-break-word lh-condensed mb-2 mt-1 bio&quot;&gt;
+                &lt;div&gt;Student and software developer.&lt;/div&gt;
+              &lt;/div&gt;
+
+          &lt;p class=&quot;f6 text-gray m-0&quot;&gt;
+                &lt;span class=&quot;mr-3&quot;&gt;
+                  &lt;a class=&quot;muted-link&quot; href=&quot;/JuliusKreutz?tab=repositories&quot; rel=&quot;noreferrer&quot;&gt;1 repository&lt;/a&gt;
+                &lt;/span&gt;
+                &lt;span&gt;
+                  &lt;a class=&quot;muted-link&quot; href=&quot;/JuliusKreutz?tab=followers&quot; rel=&quot;noreferrer&quot;&gt;8 followers&lt;/a&gt;
+                &lt;/span&gt;
+          &lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</div> </div></div>
+
+tag:github.com,2008:WatchEvent/12728991898 2020-06-25T04:28:03Z 2020-06-25T04:28:03Z <title type="html">erlangp starred google/recaptcha</title> erlangp https://github.com/erlangp <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/20636828?s=30&amp;v=4"/> <div class="watch_started"><div class="body"> <!-- watch --> <div class="d-flex flex-items-baseline border-bottom border-gray py-3"> <span class="mr-3"><a class="d-inline-block" href="/erlangp" rel="noreferrer"><img class="avatar avatar-user" src="https://avatars2.githubusercontent.com/u/20636828?s=64&amp;amp;v=4" width="32" height="32" alt="@erlangp"></a></span>
+<div class="d-flex flex-column width-full"> <div> <div class="d-flex flex-items-baseline"> <div> <a class="link-gray-dark no-underline text-bold wb-break-all d-inline-block" href="/erlangp" rel="noreferrer">erlangp</a> starred <a class="link-gray-dark no-underline text-bold wb-break-all d-inline-block" href="/google/recaptcha" rel="noreferrer">google/recaptcha</a> <span class="f6 text-gray-light no-wrap ml-1"> <relative-time datetime="2020-06-25T04:28:03Z" class="no-wrap">Jun 25, 2020</relative-time> </span> </div> </div> </div>
+
+  &lt;div class=&quot;Box p-3 mt-2&quot;&gt;
+    &lt;div&gt;
+      &lt;div class=&quot;f4 lh-condensed text-bold text-gray-dark&quot;&gt;
+        &lt;a class=&quot;link-gray-dark no-underline text-bold wb-break-all d-inline-block&quot; href=&quot;/google/recaptcha&quot; rel=&quot;noreferrer&quot;&gt;google/recaptcha&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;dashboard-break-word text-gray mt-1 mb-0 repo-description&quot;&gt;
+        &lt;p&gt;PHP client library for reCAPTCHA, a free service to protect your website from spam and abuse.&lt;/p&gt;
+      &lt;/div&gt;
+
+      &lt;p class=&quot;f6 text-gray mt-2 mb-0&quot;&gt;
+          &lt;span class=&quot;d-inline-block text-gray mr-3&quot;&gt;
+            &lt;span class=&quot;ml-0&quot;&gt;
+<span class="repo-language-color" style="background-color: #4F5D95"></span> <span itemprop="programmingLanguage">PHP</span> </span>
+
+          &lt;/span&gt;
+
+          &lt;span class=&quot;d-inline-block mr-3&quot;&gt;
+              &lt;a class=&quot;muted-link&quot; href=&quot;/google/recaptcha/stargazers&quot; rel=&quot;noreferrer&quot;&gt;&lt;svg class=&quot;octicon octicon-star mr-1&quot; viewBox=&quot;0 0 16 16&quot; version=&quot;1.1&quot; width=&quot;16&quot; height=&quot;16&quot; aria-hidden=&quot;true&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;2.8k&lt;/a&gt;
+          &lt;/span&gt;
+
+
+          &lt;span&gt;Updated Jun 25&lt;/span&gt;
+      &lt;/p&gt;
